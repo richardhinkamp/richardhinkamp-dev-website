@@ -1,0 +1,1 @@
+../vendor/bobdenotter/bolt/index.php

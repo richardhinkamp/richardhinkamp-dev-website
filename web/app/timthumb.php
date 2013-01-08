@@ -1,0 +1,1 @@
+../../vendor/bobdenotter/bolt/app/timthumb.php
