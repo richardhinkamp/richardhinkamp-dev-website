@@ -1,0 +1,21 @@
+{
+    "name": "richardhinkamp/website",
+    "description": "Website richard.hinkamp.nl, part R&D, part personal site.",
+    "autoload": {
+        "psr-0": {"RH": "./"}
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bobdenotter/bolt"
+        }
+    ],
+
+    "require": {
+        "bobdenotter/bolt": "dev-master"
+    },
+    "require-dev": {
+    },
+    "minimum-stability": "dev"
+}
