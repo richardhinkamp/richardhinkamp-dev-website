@@ -18,12 +18,10 @@ blog:
         teaser:
             type: html
             height: 150px
-        video:
-            type: video
         body:
             type: html
             height: 300px
-    taxonomy: [ categories, tags ]
+    taxonomy: [ tags ]
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 10
@@ -51,27 +49,9 @@ page:
         body:
             type: html
             height: 300px
-        template:
-            type: templateselect
-            filter: 'page-*.twig'
-    taxonomy: []
     sort: title
     recordsperpage: 100
     record_template: page.twig
-
-quote:
-    name: Quotes
-    singular_name: Quote
-    fields:
-        name:
-            type: text
-            class: large
-        slug:
-            type: slug
-            uses: quote
-        quote:
-            type: textarea
-    taxonomy: []
 
 # possible field types:
 # text - varchar(256) - input type text.

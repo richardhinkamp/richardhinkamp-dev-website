@@ -3,16 +3,12 @@ $webroot: "/";
 @import "mixins/linear-gradient";
 
 @import "style";
-//@import "../../lib/bsl/scss/generic-styling";
-
-//@import "../../lib/news/scss/item.scss";
-//@import "../../lib/event/scss/item.scss";
 
 @import "zenlike";
 
 *
 {
-    font-family: 'Lora', serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 #headercontent
@@ -35,45 +31,18 @@ $webroot: "/";
     margin-top: 0;
 }
 
-div.quote p
+div.news span.datetime,
+span.blog-date
 {
-    text-align: left;
-
-    &.quote-name
-    {
-        font-style: italic;
-        text-align: right;
-    }
-}
-
-div.news span.datetime
-{
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-right: 0.5em;
 }
 
-div.event span.datetime
-{
-    font-size: 0.9em;
-    display: block;
-}
-
-div.contact, div.news, div.event
+div.contact, div.news
 {
     ul li
     {
         list-style-type: none;
-        margin-left: 0;
-    }
-}
-
-ul.NewsItemRecentList,
-ul.NewsItemArchive,
-ul.event-item-recent-list,
-ul.event-item-archive
-{
-    li
-    {
         margin-left: 0;
     }
 }
@@ -99,19 +68,6 @@ ul.event-item-archive
     .google-plusone
     {
         padding-top: 1px;
-    }
-}
-
-div.quotes-container
-{
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: 1px dotted #B96D00;
-
-    div.quote
-    {
-        width: 190px;
-        margin: 10px;
     }
 }
 
@@ -175,18 +131,22 @@ div.quotes-container
     h1
     {
         font-size: 2.5em;
-        font-family: 'Fredericka the Great', cursive;
         padding-top: 0.5em;
+        font-weight: bold;
+
+        &, a {
+            font-family: monospace;
+        }
     }
 
     h2
     {
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 0.7em;
 
         &, span.version
         {
-            font-family: 'Swanky and Moo Moo', cursive;
+            font-family: monospace;
         }
     }
 }
@@ -341,17 +301,18 @@ body
 
 #menu
 {
-    @include linear-gradient-top-middle-bottom( #7f8400, #9ba01d, #7f8400 );
+    @include linear-gradient-top-middle-bottom( #6d88b9, #85a3df, #6d88b9);
 }
 
 #menu ul li.active a, #menu ul li a.active
 {
-    @include linear-gradient-top-bottom( #5e6200, #7f8400 );
+    @include linear-gradient-top-bottom-semitranparent( rgba(51, 51, 51, 0.43), rgba(51, 51, 51, 0));
 }
 
 .box
 {
-    @include linear-gradient-top-bottom( #f7f4dd, #fdfcf5 );
+    @include linear-gradient-top-bottom( #ececec, #fdfdfd);
+    border-bottom: 1px solid #ececec;
 }
 
 #footer
@@ -361,17 +322,27 @@ body
     @include linear-gradient-top-bottom( #f7f7f7, #fff );
 }
 
+html {
+    background-color: #ccc;
+}
+
 body
 {
-    @include linear-gradient-top-bottom( #ab8c6f, #ccad91 );
+    @include linear-gradient-top-bottom( #333, #ccc );
 }
 
 #upbg
 {
-    @include linear-gradient-top-bottom-semitranparent( #62462e, rgba( 171, 140, 111, 0 ) );
+    @include linear-gradient-top-bottom-semitranparent( #000000, rgba( 171, 140, 111, 0 ) );
 }
 
 #menubottom
 {
     @include linear-gradient-top-bottom( #d9d9d9, #fff );
+}
+
+p.meta {
+    color: #333333;
+    font-size: 0.9em;
+    font-style: italic;
 }

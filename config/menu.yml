@@ -4,11 +4,11 @@
 
 main:
   - label: Home
-    title: Home pagina
+    title: Zobriuz home page
     path: homepage
   - path: blogs
     label: Blog
-    title: Mijn blog berichten
+    title: Blog items
 #    submenu:
 #      - label: Sub 1
 #        path: entry/2
@@ -19,6 +19,6 @@ main:
 #        path: entry/4
 #      - class: sub-class
 #        path: page/3
-  - label: Quotes
-    title: Inspirerende quotes die ik her en der verzameld heb
-    path: page/quotes
+#  - label: Quotes
+#    title: Inspirerende quotes die ik her en der verzameld heb
+#    path: page/quotes

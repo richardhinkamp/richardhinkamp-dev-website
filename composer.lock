@@ -1,5 +1,5 @@
 {
-    "hash": "74c429612afdd0f975f7b9c8fe13fae8",
+    "hash": "713e76e4f72c69ecb9d6b440d66d2df8",
     "packages": [
         {
             "name": "bobdenotter/bolt",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt",
-                "reference": "a5272dee186327b8a06478d2b85c3b07cf71a8e8"
+                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/a5272dee186327b8a06478d2b85c3b07cf71a8e8",
-                "reference": "a5272dee186327b8a06478d2b85c3b07cf71a8e8",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/e5183774d26676b4da57f05f9097ad038b9cbb53",
+                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "guzzle/guzzle": ">=2.6.2",
                 "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
             },
-            "time": "2013-01-10 08:53:01",
+            "time": "2013-01-10 15:11:08",
             "type": "library",
             "installation-source": "source",
             "autoload": {

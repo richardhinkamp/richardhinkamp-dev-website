@@ -9,8 +9,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fredericka+the+Great|Swanky+and+Moo+Moo|&amp;amp;subset=latin" >
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&amp;amp;subset=latin,latin-ext" >
     <link rel="stylesheet" href="/css/layout.css"/>
 
 </head>
@@ -23,12 +21,11 @@
         <div id="header">
             <div id="headercontent">
                 <h1>
-                    <a href="/" title="Richard Hinkamp">Richard Hinkamp</a>
+                    <a href="/" title="Zobriuz">Zobriuz</a>
                 </h1>
 
                 <h2>
-                    Mijn weblog/prototype site
-                    {#<span class="version">v {{ app.version }}</span>#}
+                    Webdevelopment
                 </h2>
             </div>
         </div>
@@ -89,12 +86,9 @@
                             {% include 'layout/box/about.twig' with {'title': about.title, 'about_text': about.introduction|raw} only %}
                         {% endif %}
 
-                        {% setcontent quotes = "quotes/latest/25" %}
-                        {% include 'layout/box/quote.twig' with {'quote': random(quotes)} only %}
-
                         {% setcontent entries = "blogs/latest/3" %}
 
-                        {% include 'layout/box/blog.twig' with {'title': 'Laatste berichten', 'items': entries, 'link': '/blogs'} only %}
+                        {% include 'layout/box/blog.twig' with {'title': 'Latest blogs', 'items': entries, 'link': '/blogs'} only %}
 
                     </aside>
                 </div>
@@ -102,7 +96,7 @@
         </div>
         <div id="footer">
             <div class="left">
-                &copy; 2011-{{ "now"|date("Y") }} Richard Hinkamp
+                &copy; {{ "now"|date("Y") }} Zobriuz / Richard Hinkamp
             </div>
             <div class="right">
                 Design by <a href="http://www.nodethirtythree.com/" title="Design By NodeThirtyThree Design">NodeThirtyThree Design</a> -

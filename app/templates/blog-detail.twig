@@ -4,15 +4,23 @@
 
     <article class="blog">
         <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
-        <p class="meta">Geplaatst op {{ record.date|date("d-m-Y")}}</p>
+        <p class="meta">Placed on {{ record.date|date("M jS Y")}}</p>
         <div class="blog-body">{{ record.body }}</div>
     </article>
 
-    <h2>Laatste berichten</h2>
+    {# {% if record.taxonomy.tags is defined %}
+        <p class="tags">
+        {% for tag in record.taxonomy.tags %}
+            <a href="/tag/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+        </p>
+    {% endif %} #}
+
+    <h2>Latest blogs</h2>
     {% setcontent entries = "blogs/latest/5" %}
     <ul class="latest-blogs">
     {% for entry in entries %}
-        <li><a href="{{ record.link }}"><span class="blog-date">{{ record.date|date("d-m-Y")}}</span> {{ record.title }}</a></li>
+        <li><a href="{{ record.link }}"><span class="blog-date">{{ record.date|date("M jS")}}</span> {{ record.title }}</a></li>
     {% endfor %}
     </ul>
 

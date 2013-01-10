@@ -1,9 +1,6 @@
 {
-    "name": "richardhinkamp/website",
-    "description": "Website richard.hinkamp.nl, part R&D, part personal site.",
-    "autoload": {
-        "psr-0": {"RH": "./"}
-    },
+    "name": "richardhinkamp/zobriuz",
+    "description": "Zobriuz website",
 
     "repositories": [
         {
