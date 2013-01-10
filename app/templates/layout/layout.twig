@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{% if record.title is defined %}{{ record.title|striptags }} - {% endif %}{{ app.config.general.sitename }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fredericka+the+Great|Swanky+and+Moo+Moo|&amp;amp;subset=latin" >
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&amp;amp;subset=latin,latin-ext" >
+    <link rel="stylesheet" href="/css/layout.css"/>
+
+</head>
+
+<body>
+
+    {% block body_content %}
+    <div id="upbg"></div>
+    <div id="outer">
+        <div id="header">
+            <div id="headercontent">
+                <h1>
+                    <a href="/" title="Richard Hinkamp">Richard Hinkamp</a>
+                </h1>
+
+                <h2>
+                    Mijn weblog/prototype site
+                    {#<span class="version">v {{ app.version }}</span>#}
+                </h2>
+            </div>
+        </div>
+        <div id="headerpic"
+             {#{% if header_image.url %}style="background-image: url({{ header_image.url }}); background-position: top {{ header_image.align }};"{% endif %}#}></div>
+        <div id="menu">
+            {{ menu() }}
+        </div>
+        <div id="menubottom"></div>
+        <div id="content">
+            {% block content %}
+                <div id="primarycontainer">
+                    <div id="primarycontent">
+                        {% block primarycontent %}
+                            {% block page_content %}{% endblock %}
+                            {# {% block social_tools %}
+                                <div id="social-tools">
+                                    <div id="fb-root"></div>
+                                    <script type="text/javascript">(function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) {
+                                            return;
+                                        }
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, "script", "facebook-jssdk"));</script>
+                                    <div class="button fb-like"
+                                         data-href="{{ request.protocol }}://{{ request.host }}{{ request.url }}" data-send="false"
+                                         data-layout="box_count" data-show-faces="false"></div>
+                                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{
+                                        lang: 'nl'
+                                    }</script>
+                                    <div class="button google-plusone">
+                                        <g:plusone size="tall"></g:plusone>
+                                    </div>
+                                    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+                                    <div class="button"><a href="https://twitter.com/share" class="twitter-share-button"
+                                                           title="Tweet" data-text="{{ page.title }}" data-count="vertical"
+                                                           data-via="RichardHinkamp">Tweet</a></div>
+                                </div>
+                            {% endblock %} #}
+                            {% block footercontent %}
+                                {% if page.footer_html is defined %}
+                                    {% autoescape false %}{{ page.footer_html }}{% endautoescape %}
+                                {% endif %}
+                            {% endblock %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div id="secondarycontent">
+                    <aside>
+                        {% setcontent about = "page/about" %}
+
+                        {# check if there's a page with slug 'about' #}
+                        {% if about.title is defined %}
+                            {% include 'layout/box/about.twig' with {'title': about.title, 'about_text': about.introduction|raw} only %}
+                        {% endif %}
+
+                        {% setcontent quotes = "quotes/latest/25" %}
+                        {% include 'layout/box/quote.twig' with {'quote': random(quotes)} only %}
+
+                        {% setcontent entries = "blogs/latest/3" %}
+
+                        {% include 'layout/box/blog.twig' with {'title': 'Laatste berichten', 'items': entries, 'link': '/blogs'} only %}
+
+                    </aside>
+                </div>
+            {% endblock %}
+        </div>
+        <div id="footer">
+            <div class="left">
+                &copy; 2011-{{ "now"|date("Y") }} Richard Hinkamp
+            </div>
+            <div class="right">
+                Design by <a href="http://www.nodethirtythree.com/" title="Design By NodeThirtyThree Design">NodeThirtyThree Design</a> -
+                This site is powered by <a href="http://bolt.cm" target="_blank">Bolt</a>: Sophisticated, lightweight & simple CMS.
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block js_files %}{% endblock %}
+
+</body>
+
+</html>
+

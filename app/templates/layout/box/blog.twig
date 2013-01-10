@@ -1,0 +1,13 @@
+{% extends "layout/box/base.twig" %}
+
+{% block contentarea_class %}news{% endblock %}
+
+{% block content %}
+<ul>
+{% for item in items %}
+    <li>
+        <a title="{{ item.title }}" href="{{ item.link }}"><span class="datetime">{{ item.date|date("d-m") }}</span>{{ item.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

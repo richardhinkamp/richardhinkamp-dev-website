@@ -1,0 +1,19 @@
+{% extends "layout/layout.twig" %}
+
+{% block page_content %}
+
+    <article class="blog">
+        <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
+        <p class="meta">Geplaatst op {{ record.date|date("d-m-Y")}}</p>
+        <div class="blog-body">{{ record.body }}</div>
+    </article>
+
+    <h2>Laatste berichten</h2>
+    {% setcontent entries = "blogs/latest/5" %}
+    <ul class="latest-blogs">
+    {% for entry in entries %}
+        <li><a href="{{ record.link }}"><span class="blog-date">{{ record.date|date("d-m-Y")}}</span> {{ record.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

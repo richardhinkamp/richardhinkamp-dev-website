@@ -8,14 +8,31 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/bobdenotter/bolt"
+            "url": "https://github.com/richardhinkamp/bolt"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/jlong/sass-twitter-bootstrap"
         }
     ],
 
     "require": {
-        "bobdenotter/bolt": "dev-master"
+        "bobdenotter/bolt": "dev-paths",
+        "twitter/bootstrap": "2.2.*"
     },
     "require-dev": {
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-install-cmd": [
+            "Bolt\\Composer\\ScriptHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "Bolt\\Composer\\ScriptHandler::installAssets"
+        ]
+    },
+    "extra": {
+        "bolt-web-dir": "web",
+        "bolt-dir-mode": "0755"
+    }
 }

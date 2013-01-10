@@ -1,1 +1,0 @@
-../../vendor/bobdenotter/bolt/app/app_asynchronous.php
