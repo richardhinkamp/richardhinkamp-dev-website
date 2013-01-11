@@ -94,7 +94,7 @@
                             {% include 'layout/box/about.twig' with {'title': about.title, 'about_text': about.introduction|raw} only %}
                         {% endif %}
 
-                        {% setcontent entries = "blogs/latest/3" %}
+                        {% setcontent entries = "blogs/latest/5" %}
 
                         {% include 'layout/box/blog.twig' with {'title': 'Latest blogs', 'items': entries, 'link': '/blogs'} only %}
 
