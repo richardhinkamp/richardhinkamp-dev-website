@@ -5,6 +5,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    {% if app.config.general.debug == true or app.request.server.get("PARAM1") == "STAGING" %}
+        <meta content="NOINDEX,NOFOLLOW" name="ROBOTS">
+    {% endif %}
     <title>{% if record.title is defined %}{{ record.title|striptags }} - {% endif %}{{ app.config.general.sitename }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -14,6 +17,11 @@
 </head>
 
 <body>
+    {% if app.config.general.debug == true %}
+        <div class="top-notice development">!! DEVELOPMENT VERSION !!</div>
+    {% elseif app.request.server.get("PARAM1") == "STAGING" %}
+        <div class="top-notice staging">!! TEST VERSION !!</div>
+    {% endif %}
 
     {% block body_content %}
     <div id="upbg"></div>

@@ -346,3 +346,15 @@ p.meta {
     font-size: 0.9em;
     font-style: italic;
 }
+
+.top-notice {
+  width:  100%;
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-family: monospace;
+}
