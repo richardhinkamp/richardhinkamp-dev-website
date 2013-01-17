@@ -20,8 +20,6 @@ notfound:
 theme: rh
 theme_path: /app/templates
 
-app_web_path: /bolt-public/
-
 # Add jQuery to the rendered HTML, whether or not it's added by an extension.
 add_jquery: true
 
@@ -90,7 +88,7 @@ wysiwyg_subsuper: false
 # you know what you're doing, and you're having issues with the default settings.
 # note: if you change any of these, all current users will automatically be logged off.
 cookies_use_remoteaddr: true
-cookies_use_browseragent: false
+cookies_use_browseragent: true
 cookies_use_httphost: true
 cookies_https_only: false # note: this is on the TODO list.
 
