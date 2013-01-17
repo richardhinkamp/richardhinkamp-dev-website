@@ -6,7 +6,7 @@
 <ul>
 {% for item in items %}
     <li>
-        <a title="{{ item.title }}" href="{{ item.link }}"><span class="datetime">{{ item.date|date("M jS") }}</span>{{ item.title }}</a>
+        <a title="{{ item.title }}" href="{{ item.link }}"><span class="datetime">{{ item.date|date("M jS") }}</span><span class="title">{{ item.title }}</span></a>
     </li>
 {% endfor %}
 </ul>

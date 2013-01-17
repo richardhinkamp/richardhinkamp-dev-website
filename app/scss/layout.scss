@@ -112,9 +112,24 @@ div.contact, div.news
 
     .contentarea
     {
+        padding-top: 0;
+
         ul
         {
             margin: 0;
+        }
+    }
+
+    .news {
+        .datetime {
+            display: block;
+            width: 50px;
+            margin-right: 0;
+            float: left;
+        }
+        .title {
+            display: block;
+            margin-left: 50px;
         }
     }
 }
