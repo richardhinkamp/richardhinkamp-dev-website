@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt",
-                "reference": "34e4037a42a9ad5e7b4605e066f6a2249555048c"
+                "reference": "a8de866b2130d7ccf1dc4b2a7acf5c332e8a2034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/34e4037a42a9ad5e7b4605e066f6a2249555048c",
-                "reference": "34e4037a42a9ad5e7b4605e066f6a2249555048c",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/a8de866b2130d7ccf1dc4b2a7acf5c332e8a2034",
+                "reference": "a8de866b2130d7ccf1dc4b2a7acf5c332e8a2034",
                 "shasum": ""
             },
             "require": {
@@ -30,9 +30,8 @@
                 "guzzle/guzzle": ">=2.6.2",
                 "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
             },
-            "time": "2013-01-11 13:56:41",
+            "time": "2013-01-17 14:06:54",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Bolt": "app/src/",
@@ -62,7 +61,6 @@
             },
             "time": "2012-08-29 01:04:14",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
@@ -128,7 +126,6 @@
             },
             "time": "2012-11-25 18:06:51",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL": "lib/"
@@ -173,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle",
-                "reference": "e4366e6d43dad8d251c62cb21dd6328e711e8d6c"
+                "reference": "9ff2b8f91fead11d980c1f6553e2c7d87c7b8d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/guzzle/archive/e4366e6d43dad8d251c62cb21dd6328e711e8d6c.zip",
-                "reference": "e4366e6d43dad8d251c62cb21dd6328e711e8d6c",
+                "url": "https://github.com/guzzle/guzzle/archive/9ff2b8f91fead11d980c1f6553e2c7d87c7b8d76.zip",
+                "reference": "9ff2b8f91fead11d980c1f6553e2c7d87c7b8d76",
                 "shasum": ""
             },
             "require": {
@@ -225,14 +222,13 @@
                 "zend/zend-cache": "2.0.0beta3",
                 "zend/zend-log": "2.0.0beta3"
             },
-            "time": "2013-01-10 23:30:22",
+            "time": "2013-01-15 01:18:12",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Guzzle\\Tests": "tests/",
@@ -290,7 +286,6 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Pimple": "lib/"
@@ -319,12 +314,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "605f8262b6757e7721dcd8a0073a917e900f6862"
+                "reference": "ec01b080852ee85bbb4ae5abd7fa205df9824079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Silex/archive/605f8262b6757e7721dcd8a0073a917e900f6862.zip",
-                "reference": "605f8262b6757e7721dcd8a0073a917e900f6862",
+                "url": "https://github.com/fabpot/Silex/archive/ec01b080852ee85bbb4ae5abd7fa205df9824079.zip",
+                "reference": "ec01b080852ee85bbb4ae5abd7fa205df9824079",
                 "shasum": ""
             },
             "require": {
@@ -359,14 +354,13 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-01-11 06:54:36",
+            "time": "2013-01-17 12:25:17",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Silex": "src/"
@@ -417,7 +411,6 @@
                     "dev-master": "4.1-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "lib/swift_required.php"
@@ -463,7 +456,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Config": ""
@@ -493,20 +485,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console",
-                "reference": "fc27a6b04f5425036764e4bfa96c9c889f34c957"
+                "reference": "5a46888e178b84d9578a1f460580190d35200756"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/archive/fc27a6b04f5425036764e4bfa96c9c889f34c957.zip",
-                "reference": "fc27a6b04f5425036764e4bfa96c9c889f34c957",
+                "url": "https://github.com/symfony/Console/archive/5a46888e178b84d9578a1f460580190d35200756.zip",
+                "reference": "5a46888e178b84d9578a1f460580190d35200756",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-09 08:51:07",
+            "time": "2013-01-16 09:27:54",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Console": ""
@@ -556,7 +547,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\EventDispatcher": ""
@@ -599,7 +589,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Filesystem": ""
@@ -653,7 +642,6 @@
             },
             "time": "2013-01-11 13:37:17",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Form": ""
@@ -696,7 +684,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpFoundation": "",
@@ -760,7 +747,6 @@
             },
             "time": "2013-01-11 10:35:43",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpKernel": ""
@@ -806,7 +792,6 @@
             },
             "time": "2013-01-10 04:41:59",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Locale": ""
@@ -849,7 +834,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\OptionsResolver": ""
@@ -884,12 +868,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "20b0af13fe2be7fa979f1829b0e23a56803a2c58"
+                "reference": "81b5a5649b8b1fba057f3fdd5ca15cc3af822b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/archive/20b0af13fe2be7fa979f1829b0e23a56803a2c58.zip",
-                "reference": "20b0af13fe2be7fa979f1829b0e23a56803a2c58",
+                "url": "https://github.com/symfony/Routing/archive/81b5a5649b8b1fba057f3fdd5ca15cc3af822b66.zip",
+                "reference": "81b5a5649b8b1fba057f3fdd5ca15cc3af822b66",
                 "shasum": ""
             },
             "require": {
@@ -907,14 +891,13 @@
                 "symfony/config": "2.2.*",
                 "symfony/yaml": "2.2.*"
             },
-            "time": "2013-01-10 16:57:14",
+            "time": "2013-01-15 17:01:40",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.2-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Routing\\": ""
@@ -965,7 +948,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Translation": ""
@@ -1025,7 +1007,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "symfony-bridge",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Bridge\\Twig": ""
@@ -1078,7 +1059,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Validator": ""
@@ -1121,7 +1101,6 @@
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Yaml": ""
@@ -1150,25 +1129,24 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "3111e1265db1026323c589a5bd2d152871d7bbab"
+                "reference": "3225226e0be466395414da4b362013531eedb580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/3111e1265db1026323c589a5bd2d152871d7bbab.zip",
-                "reference": "3111e1265db1026323c589a5bd2d152871d7bbab",
+                "url": "https://github.com/fabpot/Twig/archive/3225226e0be466395414da4b362013531eedb580.zip",
+                "reference": "3225226e0be466395414da4b362013531eedb580",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-08 16:56:12",
+            "time": "2013-01-16 13:37:25",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.12-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"
@@ -1211,7 +1189,6 @@
             },
             "time": "2012-12-09 20:32:58",
             "type": "library",
-            "installation-source": "dist",
             "license": [
                 "Apache-2.0"
             ],
