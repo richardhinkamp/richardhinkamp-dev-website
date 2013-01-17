@@ -1,5 +1,6 @@
 # The name of the website
 sitename: Zobriuz webdevelopment
+site_description: Website about tech stuff I'm interested in, like open source web stuff
 
 # If your site is reachable under different urls (say, both blog.example.org/
 # as well as example.org/), it's a good idea to set one of these as the canonical,
