@@ -348,7 +348,12 @@ body
 
 #upbg
 {
-    @include linear-gradient-top-bottom-semitranparent( #000000, rgba( 171, 140, 111, 0 ) );
+    @include linear-gradient-top-bottom-semitranparent( #000000, rgba( 140, 140, 140, 0 ) );
+}
+
+article.blog-intro h2,
+article.blog h1 {
+    margin-bottom: 0;
 }
 
 #menubottom
