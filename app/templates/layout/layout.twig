@@ -31,9 +31,9 @@
 </head>
 
 <body>
-    {% if app.config.general.debug == true %}
+    {% if app.request.server.get("PARAM1") == "STAGING" %}
         <div class="top-notice development">!! DEVELOPMENT VERSION !!</div>
-    {% elseif app.request.server.get("PARAM1") == "STAGING" %}
+    {% elseif app.config.general.debug == true %}
         <div class="top-notice staging">!! TEST VERSION !!</div>
     {% endif %}
 
