@@ -5,7 +5,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/richardhinkamp/bolt"
+            "url": "https://github.com/bobdenotter/bolt"
         },
         {
             "type": "vcs",
@@ -14,7 +14,7 @@
     ],
 
     "require": {
-        "bobdenotter/bolt": "dev-paths",
+        "bobdenotter/bolt": "dev-master",
         "twitter/bootstrap": "2.2.*"
     },
     "require-dev": {
