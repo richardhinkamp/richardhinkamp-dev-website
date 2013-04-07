@@ -4,7 +4,7 @@
 
 main:
   - label: Home
-    title: Zobriuz home page
+    title: Dev home page
     path: homepage
   - path: blogs
     label: Blog
