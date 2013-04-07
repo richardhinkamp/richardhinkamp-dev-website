@@ -5,3 +5,5 @@ web/bolt-public/
 web/files/*
 config/config_local.yml
 .elasticbeanstalk/
+web/kcfinder
+web/upload/*
