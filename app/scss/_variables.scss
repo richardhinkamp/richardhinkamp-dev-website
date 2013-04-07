@@ -1,0 +1,10 @@
+$webroot: "/";
+
+$linkColor:             #6D88B9;
+$iconSpritePath:          "/bolt-public/view/img/glyphicons-halflings.png"; // TODO
+$iconWhiteSpritePath:     "/bolt-public/view/img/glyphicons-halflings-white.png"; // TODO
+
+@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/variables";
+
+$baseFontFamily:        $serifFontFamily;
+$altFontFamily:         $sansFontFamily;
