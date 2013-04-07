@@ -31,12 +31,6 @@
 </head>
 
 <body>
-    {% if app.request.server.get("PARAM1") == "STAGING" %}
-        <div class="top-notice development">!! TEST VERSION !!</div>
-    {% elseif app.config.general.debug == true %}
-        <div class="top-notice staging">!! DEVELOPMENT VERSION !!</div>
-    {% endif %}
-
     {% block body_content %}
     <div id="upbg"></div>
     <div id="outer">
