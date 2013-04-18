@@ -1,19 +1,16 @@
 @import "variables";
 
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/mixins";
-
 @import "mixins/linear-gradient";
 
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/reset";
-
 @import "style";
-//@import "../../lib/bsl/scss/generic-styling";
 
-//@import "../../lib/news/scss/item.scss";
-//@import "../../lib/event/scss/item.scss";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/layouts";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/navs";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/navbar";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/responsive-navbar";
 
 @import "zenlike";
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/pagination";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/pagination";
 
 *
     {
@@ -97,10 +94,10 @@ ul.event-item-archive
     }
 }
 
-#outer
-    {
+#outer {
     width: 95%;
     max-width: 1100px;
+    margin-top: 25px;
 }
 
 #primarycontainer,
@@ -372,11 +369,6 @@ html {
 body
     {
     @include linear-gradient-top-bottom( #333, #ccc );
-}
-
-#upbg
-    {
-    @include linear-gradient-top-bottom-semitranparent( #000000, rgba( 140, 140, 140, 0 ) );
 }
 
 #menubottom
