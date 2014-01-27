@@ -1,4 +1,7 @@
 .idea/
+.buildpath
+.project
+.settings/
 vendor/
 .sass-cache/
 web/bolt-public/
