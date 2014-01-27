@@ -13,16 +13,16 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/jlong/sass-twitter-bootstrap"
+            "url": "https://github.com/bobdenotter/dumper"
         }
     ],
 
     "require": {
-        "silex/silex": "1.0.*@dev",
-        "htmlawed/htmlawed": "dev-master",
-        "hautelook/phpass": "dev-master",
-        "doctrine/dbal": "2.4.*@dev",
-        "doctrine/common": "2.4.*@dev",
+	"bobdenotter/dumper": "dev-master",
+	"erusev/parsedown": "dev-master",
+	"garetjax/phpbrowscap": "dev-master",
+	"hautelook/phpass": "dev-master",
+	"ircmaxell/random-lib": "1.0.*@dev",
         "bolt/bolt": "dev-master",
         "richardhinkamp/kcfinder": "dev-master",
         "jlong/sass-twitter-bootstrap": "2.3.*"
