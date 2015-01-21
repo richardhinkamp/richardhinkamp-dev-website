@@ -5,20 +5,18 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/bolt/bolt"
+            "url": "https://github.com/richardhinkamp/kcfinder"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/richardhinkamp/kcfinder"
+            "url": "https://github.com/richardhinkamp/bolt"
         }
     ],
 
     "require": {
-        "erusev/parsedown": "dev-master",
-        "garetjax/phpbrowscap": "dev-master",
+        "ircmaxell/random-lib": "dev-master",
         "hautelook/phpass": "dev-master",
-        "ircmaxell/random-lib": "1.0.*@dev",
-        "bolt/bolt": "dev-master",
+        "bolt/bolt": "dev-release/1.6",
         "richardhinkamp/kcfinder": "dev-master",
         "jlong/sass-twitter-bootstrap": "2.3.*"
     },

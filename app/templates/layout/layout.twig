@@ -8,7 +8,7 @@
     {% if app.config.get('general/debug') == true %}
         <meta content="NOINDEX,NOFOLLOW" name="ROBOTS">
     {% endif %}
-    <title>{% if record.title is defined %}{{ record.title|striptags }}{% else %}{{ app.config.general.sitename }}{% endif %}</title>
+    <title>{% block title_text %}{% if record.title is defined %}{{ record.title|striptags }}{% else %}{{ app.config.get('sitename') }}{% endif %}{% endblock %}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -118,7 +118,7 @@
         </div>
         <div id="footer">
             <div class="left">
-                &copy; {{ "now"|date("Y") }} Richard Hinkamp
+                &copy; {{ "now"|date("Y") }} Richard Hinkamp - <a href="/sitemap" title="Sitemap">Sitemap</a>
             </div>
             <div class="right">
                 Design by <a href="http://www.nodethirtythree.com/" title="Design By NodeThirtyThree Design">NodeThirtyThree Design</a> -
