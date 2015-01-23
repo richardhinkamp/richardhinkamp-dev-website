@@ -21,7 +21,7 @@ blogs:
         body:
             type: html
             height: 300px
-    taxonomy: [ tags ]
+    taxonomy: []
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 10
@@ -33,25 +33,25 @@ blogs:
       feed_template: rss.twig
       content_length: 250
 
-pages:
-    name: Pages
-    singular_name: Page
-    fields:
-        title:
-            type: text
-            class: large
-        slug:
-            type: slug
-            uses: title
-        introduction:
-            type: html
-            height: 150px
-        body:
-            type: html
-            height: 300px
-    sort: title
-    recordsperpage: 100
-    record_template: page.twig
+#pages:
+#    name: Pages
+#    singular_name: Page
+#    fields:
+#        title:
+#            type: text
+#            class: large
+#        slug:
+#            type: slug
+#            uses: title
+#        introduction:
+#            type: html
+#            height: 150px
+#        body:
+#            type: html
+#            height: 300px
+#    sort: title
+#    recordsperpage: 100
+#    record_template: page.twig
 
 # possible field types:
 # text - varchar(256) - input type text.

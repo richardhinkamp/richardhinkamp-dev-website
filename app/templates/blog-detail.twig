@@ -1,27 +1,25 @@
 {% extends "layout/layout.twig" %}
 
 {% block page_content %}
+    <article>
+        <div class="meta">
+            <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
 
-    <article class="blog">
-        <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
-        <p class="meta">Placed on {{ record.date|date("M jS Y")}}</p>
-        <div class="blog-body">{{ record.body }}</div>
+            <p class="date">
+                Geplaatst op <strong>{{ record.datepublish|date("M jS Y")}}</strong>
+            </p>
+        </div>
+        {{ record.body }}
     </article>
+{% endblock %}
 
-    {# {% if record.taxonomy.tags is defined %}
-        <p class="tags">
-        {% for tag in record.taxonomy.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-        </p>
-    {% endif %} #}
-
-    <h2>Latest blogs</h2>
-    {% setcontent entries = "blogs/latest/5" %}
-    <ul class="latest-blogs">
-    {% for entry in entries %}
-        <li><a href="{{ entry.link }}"><span class="blog-date">{{ entry.date|date("M jS")}}</span> {{ entry.title }}</a></li>
-    {% endfor %}
-    </ul>
-
+{% block js_files %}
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+{#<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>#}
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js" type="text/javascript"></script>
+{#<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>#}
+{#<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSass.js" type="text/javascript"></script>#}
+<script type="text/javascript">SyntaxHighlighter.all();</script>
 {% endblock %}

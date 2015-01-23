@@ -1,13 +1,12 @@
-<article class="news-intro">
-    {% if record.image!="" %}
-        <div class='imageholder'><img src="{{ record.image|thumbnail(120, 120) }}">
-        </div>
-    {% endif %}
+<article>
+    <div class="meta">
+        <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
 
-    <h2><a href="{{ record.link }}">{{ record.title }}</a></h2>
-    <p class="meta">Placed on {{ record.date|date("M jS Y")}}</p>
+        <p class="date">
+            Published on <strong>{{ record.datepublish|date("M jS Y")}}</strong>
+        </p>
+    </div>
 
     {{ record.teaser }}
 
-    <p class="read-more"><a href="{{ record.link }}">Read more »</a></p>
 </article>

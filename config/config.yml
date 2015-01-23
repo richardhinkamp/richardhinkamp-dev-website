@@ -22,7 +22,7 @@ theme: templates
 theme_path: /../app/
 
 # Add jQuery to the rendered HTML, whether or not it's added by an extension.
-add_jquery: true
+add_jquery: false
 
 # The list of enabled extensions.
 # TestSnippets, GoogleAnalytics
