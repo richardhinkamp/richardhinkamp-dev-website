@@ -40,7 +40,7 @@
 </footer>
 
 {% block js_files %}{% endblock %}
-{% if app.config.get('general/debug') == true %}
+{% if app.config.get('general/debug') != true %}
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
