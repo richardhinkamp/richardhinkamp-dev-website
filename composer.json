@@ -12,9 +12,6 @@
             "url": "https://github.com/richardhinkamp/bolt"
         }
     ],
-    "autoload": {
-        "psr-0": {"RhDev": "./app/src/"}
-    },
     "require": {
         "ircmaxell/random-lib": "dev-master",
         "hautelook/phpass": "dev-master",
