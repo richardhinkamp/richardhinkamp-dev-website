@@ -16,6 +16,10 @@ homepage:
   path:               /
   defaults:           { _controller: 'Bolt\Controllers\Frontend::homepage' }
 
+error404:
+  path:               /error404
+  defaults:           { _controller: 'RhDev\Controllers\Frontend::error404' }
+
 search:
   path:               /search
   defaults:           { _controller: 'Bolt\Controllers\Frontend::search' }
